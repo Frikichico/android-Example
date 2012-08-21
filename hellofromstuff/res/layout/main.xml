@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <Button
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/android_button" />
+ <EditText
+        android:id="@+id/main_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+<CheckBox android:id="@+id/main_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check it out" />
+
+ <RadioGroup
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <RadioButton android:id="@+id/main_radio_red"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Red" />
+      <RadioButton android:id="@+id/main_radio_blue"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Blue" />
+    </RadioGroup>
+    
+      <ToggleButton android:id="@+id/main_togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Vibrate on"
+        android:textOff="Vibrate off"/>
+      
+      <RatingBar android:id="@+id/main_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"/>
+</LinearLayout>

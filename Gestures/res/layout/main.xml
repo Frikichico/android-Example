@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--	Remove For listview
+	 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:text="@string/prompt"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+    <android.gesture.GestureOverlayView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gestures"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:eventsInterceptionEnabled="true"
+        android:gestureStrokeType="multiple"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </android.gesture.GestureOverlayView>
